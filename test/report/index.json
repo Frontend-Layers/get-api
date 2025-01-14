@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-14T01:27:08.261Z",
+    "end": "2025-01-14T01:27:08.814Z",
+    "duration": 553,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9ade5267-18ee-47ec-b7ae-f469fa3104a5",
+      "title": "",
+      "fullFile": "W:\\home\\fel\\get-api\\test\\test.mjs",
+      "file": "\\test\\test.mjs",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2b785ef4-5dde-4c34-9881-75c058254ceb",
+          "title": "API Fetch Test",
+          "fullFile": "W:\\home\\fel\\get-api\\test\\test.mjs",
+          "file": "\\test\\test.mjs",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should fetch data from openWeather API",
+              "fullTitle": "API Fetch Test should fetch data from openWeather API",
+              "timedOut": false,
+              "duration": 303,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const city = 'London';\nconst url = `${openWeatherBaseUrl}?q=${city}&appid=${OPENWEATHER_API_KEY}`;\nconst response = await fetch(url);\nconst data = await response.json();\nexpect(response.status).to.equal(200);\nexpect(data.weather).to.be.an('array');\nexpect(data.weather[0]).to.have.property('description');",
+              "err": {},
+              "uuid": "5e223db4-60bf-49c3-943d-ead6409de6a7",
+              "parentUUID": "2b785ef4-5dde-4c34-9881-75c058254ceb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should fetch data from weatherApi API",
+              "fullTitle": "API Fetch Test should fetch data from weatherApi API",
+              "timedOut": false,
+              "duration": 242,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const city = 'Paris';\nconst url = `${weatherApiBaseUrl}?q=${city}&key=${WEATHERAPI_API_KEY}`;\nconst response = await fetch(url);\nconst data = await response.json();\nexpect(response.status).to.equal(200);\nexpect(data.current).to.be.an('object');\nexpect(data.current).to.have.property('temp_c');",
+              "err": {},
+              "uuid": "250ea335-6130-4752-8b0a-113b9251f6c4",
+              "parentUUID": "2b785ef4-5dde-4c34-9881-75c058254ceb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5e223db4-60bf-49c3-943d-ead6409de6a7",
+            "250ea335-6130-4752-8b0a-113b9251f6c4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 545,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "index.html",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./test/report",
+        "reportFilename": "index.html",
+        "quiet": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
