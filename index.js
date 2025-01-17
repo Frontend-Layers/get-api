@@ -1,40 +1,38 @@
 import 'dotenv/config';
-import http from 'http';
-import url from 'url';
-import { fetchData } from './api/index.js';
+import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import helmetConfig from './app/helmet-config.js';
+import logger from './app/logger.js';
+import apiRoutes from './app/routes.js';
+import notFoundHandler from './app/not-found.js';
+import errorHandler from './app/error-handler.js';
+import startServer from './app/server.js';
 
-const server = http.createServer(async (req, res) => {
-  const parsedUrl = url.parse(req.url, true);
-  const { pathname, query } = parsedUrl;
-
-  if (pathname === '/api') {
-    const { service, q } = query;
-
-    if (!service || !q) {
-      res.writeHead(400, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ error: 'Missing "service" or "q" query parameter.' }));
-      return;
-    }
-
-    try {
-      console.log(`Fetching data for service: ${service}, query: ${q}`);
-      const data = await fetchData(service, { q, appid: process.env.OPENWEATHER_API_KEY });
-
-      res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify(data));
-    } catch (error) {
-      console.error('Error during fetchData:', error);
-      res.writeHead(500, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ error: error.message }));
-    }
-  } else {
-    res.writeHead(404, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({ error: 'Not Found' }));
-  }
-});
-
+const app = express();
 const PORT = process.env.PORT || 3000;
 
-server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
+// Resolve paths
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Serve static files
+app.use(express.static(path.join(__dirname, 'app', 'public')));
+
+// XSS prevention
+app.use(helmetConfig);
+
+// API routes
+app.use(apiRoutes);
+
+// Catch 404
+app.use(notFoundHandler);
+
+// Error handler
+app.use(errorHandler);
+
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'app', 'views'));
+
+// Start the server
+startServer(app, PORT);

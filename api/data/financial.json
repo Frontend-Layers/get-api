@@ -1,0 +1,142 @@
+{
+  "Alpha Vantage": {
+    "baseUrl": "https://www.alphavantage.co/query",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "apiKeyParam": "apikey",
+    "description": "Provides real-time and historical data on stocks, currencies, and cryptocurrencies.",
+    "limitation": "Free tier allows up to 5 API requests per minute and 500 requests per day.",
+    "documentation": "https://www.alphavantage.co/documentation/",
+    "regions": "Global",
+    "category": "Finance",
+    "features": [
+      "Stock data",
+      "Cryptocurrency data",
+      "Forex data",
+      "Technical indicators"
+    ],
+    "logo": "https://www.alphavantage.co/images/branding.png",
+    "favicon": "https://www.alphavantage.co/favicon.ico"
+  },
+  "CoinGecko": {
+    "baseUrl": "https://api.coingecko.com/api/v3",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "apiKeyParam": null,
+    "description": "Provides cryptocurrency market data, including prices, market caps, and trends.",
+    "limitation": "No API key required; rate-limited to 50 requests per minute.",
+    "documentation": "https://www.coingecko.com/en/api",
+    "regions": "Global",
+    "category": "Cryptocurrency",
+    "features": [
+      "Market trends",
+      "Price tracking",
+      "Historical data",
+      "Market capitalization"
+    ],
+    "logo": "https://www.coingecko.com/favicon.ico",
+    "favicon": "https://www.coingecko.com/favicon.ico"
+  },
+  "CoinMarketCap": {
+    "baseUrl": "https://pro-api.coinmarketcap.com/v1",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "apiKeyParam": "CMC_PRO_API_KEY",
+    "description": "Tracks cryptocurrency prices, volumes, and market data.",
+    "limitation": "Free tier allows 10,000 credits per month.",
+    "documentation": "https://coinmarketcap.com/api/documentation/",
+    "regions": "Global",
+    "category": "Cryptocurrency",
+    "features": [
+      "Price tracking",
+      "Market volume",
+      "Global market trends",
+      "Data analysis"
+    ],
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
+    "favicon": "https://coinmarketcap.com/favicon.ico"
+  },
+  "Polygon.io": {
+    "baseUrl": "https://api.polygon.io/v1",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "apiKeyParam": "apiKey",
+    "description": "Real-time and historical stock, forex, and cryptocurrency market data.",
+    "limitation": "Free plan allows limited access to data and APIs.",
+    "documentation": "https://polygon.io/docs",
+    "regions": "Global",
+    "category": "Finance",
+    "features": [
+      "Real-time stock data",
+      "Forex rates",
+      "Cryptocurrency market data",
+      "Historical analysis"
+    ],
+    "logo": "https://polygon.io/images/favicon.png",
+    "favicon": "https://polygon.io/favicon.ico"
+  },
+  "Etherscan": {
+    "baseUrl": "https://api.etherscan.io/api",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "apiKeyParam": "apikey",
+    "description": "Ethereum blockchain explorer API for accessing transaction, block, and account data.",
+    "limitation": "Free tier allows up to 5 requests per second.",
+    "documentation": "https://etherscan.io/apis",
+    "regions": "Global",
+    "category": "Blockchain",
+    "features": [
+      "Transaction data",
+      "Block details",
+      "Account balances",
+      "Smart contract interaction"
+    ],
+    "logo": "https://etherscan.io/images/brandassets/etherscan-logo-light-circle.png",
+    "favicon": "https://etherscan.io/favicon.ico"
+  },
+  "Blockchain.com": {
+    "baseUrl": "https://blockchain.info/",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "apiKeyParam": null,
+    "description": "Provides access to Bitcoin blockchain data, including transactions, addresses, and charts.",
+    "limitation": "No API key required; subject to rate limits.",
+    "documentation": "https://www.blockchain.com/api",
+    "regions": "Global",
+    "category": "Blockchain",
+    "features": [
+      "Transaction details",
+      "Address data",
+      "Network charts",
+      "Historical data"
+    ],
+    "logo": "https://www.blockchain.com/static/img/logos/logo-circle.svg",
+    "favicon": "https://www.blockchain.com/favicon.ico"
+  },
+  "Finnhub": {
+    "baseUrl": "https://finnhub.io/api/v1",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "apiKeyParam": "token",
+    "description": "Provides stock, forex, and cryptocurrency data, including news and sentiment analysis.",
+    "limitation": "Free tier allows 60 API calls per minute.",
+    "documentation": "https://finnhub.io/docs/api",
+    "regions": "Global",
+    "category": "Finance",
+    "features": [
+      "Market data",
+      "Sentiment analysis",
+      "News aggregation",
+      "Real-time updates"
+    ],
+    "logo": "https://static.finnhub.io/logo/finnhub-circle.png",
+    "favicon": "https://static.finnhub.io/favicon.ico"
+  }
+}

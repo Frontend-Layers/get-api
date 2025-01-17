@@ -1,0 +1,58 @@
+{
+  "OpenWeather": {
+    "description": "Provides current weather data for any location including over 200,000 cities.",
+    "url": "https://api.openweathermap.org/data/2.5/weather",
+    "usage": "For developers needing real-time weather data.",
+    "limitations": "Free tier allows 60 calls per minute.",
+    "documentation": "https://openweathermap.org/guide",
+    "regions": "Global",
+    "category": "Weather Data",
+    "features": [
+      "Real-time weather updates",
+      "Coverage for over 200,000 cities"
+    ],
+    "baseUrl": "https://api.openweathermap.org/data/2.5/weather",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "apiKeyParam": "appid",
+    "logo": "https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png",
+    "favicon": "https://openweathermap.org/themes/openweathermap/assets/img/favicon.ico"
+  },
+  "WeatherAPI": {
+    "description": "Offers real-time weather data and forecasts for cities worldwide.",
+    "url": "https://api.weatherapi.com/v1/current.json",
+    "usage": "For developers requiring comprehensive weather data.",
+    "limitations": "Free tier allows 1,000 calls per month.",
+    "documentation": "https://www.weatherapi.com/docs/",
+    "regions": "Global",
+    "category": "Weather Data",
+    "features": [
+      "Real-time weather information",
+      "Forecasts for cities worldwide"
+    ],
+    "baseUrl": "https://api.weatherapi.com/v1/current.json",
+    "headers": {},
+    "apiKeyParam": "key",
+    "logo": "https://www.weatherapi.com/logo.png",
+    "favicon": "https://www.weatherapi.com/favicon.ico"
+  },
+  "WeatherStack": {
+    "description": "Delivers real-time weather information for global locations with historical data options.",
+    "url": "http://api.weatherstack.com/current",
+    "usage": "For developers needing detailed weather data.",
+    "limitations": "Free tier allows 250 calls per month.",
+    "documentation": "https://weatherstack.com/documentation",
+    "regions": "Global",
+    "category": "Weather Data",
+    "features": [
+      "Real-time weather updates",
+      "Historical weather data"
+    ],
+    "baseUrl": "http://api.weatherstack.com/current",
+    "headers": {},
+    "apiKeyParam": "access_key",
+    "logo": "https://assets.weatherstack.com/images/ws_icon.png",
+    "favicon": "https://assets.weatherstack.com/images/favicon.ico"
+  }
+}
