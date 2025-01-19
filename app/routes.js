@@ -8,10 +8,39 @@ import { fileURLToPath } from 'url';
 
 const router = express.Router();
 
-// Resolve the base directory for content.json
+// Resolve the base directory for the data folder
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const contentPath = path.join(__dirname, '../api/data/content.json');
+const dataDir = path.join(__dirname, '../api/data');
+
+// Helper function to read and parse all JSON files in the data directory
+const readJsonFiles = async () => {
+  try {
+    const files = await fs.readdir(dataDir);
+    const jsonFiles = files.filter(file => file.endsWith('.json'));
+    const jsonData = {};
+
+    // Read each JSON file and parse it
+    for (const file of jsonFiles) {
+      const filePath = path.join(dataDir, file);
+      const data = await fs.readFile(filePath, 'utf8');
+      jsonData[file.replace('.json', '')] = JSON.parse(data);
+    }
+
+    // Sort data by file name (key)
+    const sortedJsonData = Object.keys(jsonData)
+      .sort()
+      .reduce((acc, key) => {
+        acc[key] = jsonData[key];
+        return acc;
+      }, {});
+
+    return sortedJsonData;
+  } catch (error) {
+    logger.error('Error reading JSON files', { error: error.message });
+    throw error;
+  }
+};
 
 router.get('/api', [
   query('service')
@@ -57,15 +86,13 @@ router.get(['/catalogue', '/catalogue.html'], async (req, res, next) => {
       userAgent: req.get('user-agent'),
     });
 
-    const data = await fs.readFile(contentPath, 'utf8');
-    const apiData = JSON.parse(data);
+    const apiData = await readJsonFiles();
 
     res.render('catalogue', { data: apiData });
   } catch (error) {
-    logger.error('Error reading content.json', { error: error.message });
+    logger.error('Error reading JSON files', { error: error.message });
     next(error);
   }
 });
-
 
 export default router;

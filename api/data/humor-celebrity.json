@@ -1,0 +1,14 @@
+{
+  "Famous Birthdays API": {
+    "category": "Humor/Celebrity",
+    "description": "Returns information about celebrities with potential for humorous content.",
+    "endpoint": "https://api.famousbirthdays.com/api",
+    "features": [
+      "Celebrity birthday data",
+      "Brief bios"
+    ],
+    "limitations": "Free tier with limitations; requires API key.",
+    "regions": "Global",
+    "usage": "To celebrate or make fun of celebrity birthdays in a light-hearted way."
+  }
+}

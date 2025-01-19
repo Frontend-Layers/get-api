@@ -1,0 +1,14 @@
+{
+  "Fortune Cookie API": {
+    "cat": "Humor/Fortune",
+    "doc": "https://helloacm.com/api/fortune/",
+    "dsc": "Provides fortune cookie messages, often with a humorous twist.",
+    "endpoint": "https://helloacm.com/api/fortune/",
+    "features": [
+      "Random fortune messages",
+      "Simple text output"
+    ],
+    "limit": "Free for all use.",
+    "req": ""
+  }
+}

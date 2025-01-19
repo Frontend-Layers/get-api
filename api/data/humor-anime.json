@@ -1,0 +1,26 @@
+{
+  "Anime Quotes": {
+    "category": "Humor/Anime",
+    "description": "Fetches random quotes from anime, often humorous or insightful.",
+    "endpoint": "https://animechan.vercel.app/api/random",
+    "features": [
+      "Random anime quotes",
+      "Character-specific quotes"
+    ],
+    "limitations": "Free for all use.",
+    "regions": "Global",
+    "usage": "For anime fans or to add a cultural touch of humor to projects."
+  },
+  "Insult.moe": {
+    "category": "Humor/Anime",
+    "description": "Generates anime-themed insults for playful banter.",
+    "endpoint": "https://insult.moe/api/insult",
+    "features": [
+      "Anime-themed insults",
+      "Random insult generation"
+    ],
+    "limitations": "Free for all use.",
+    "regions": "Global",
+    "usage": "For fun or in applications with an anime theme."
+  }
+}

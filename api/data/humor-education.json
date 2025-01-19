@@ -1,0 +1,15 @@
+{
+  "NASA's Astronomy Picture of the Day (APOD)": {
+    "category": "Humor/Education",
+    "description": "Provides daily or random space images with explanations.",
+    "endpoint": "https://api.nasa.gov/planetary/apod",
+    "features": [
+      "Daily space image",
+      "Random image selection",
+      "Explanations included"
+    ],
+    "limitations": "Requires an API key; 1000 requests per day for free use.",
+    "regions": "Global",
+    "usage": "For space enthusiasts or to add a cosmic touch to humor."
+  }
+}

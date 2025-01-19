@@ -1,0 +1,26 @@
+{
+  "The Cocktail DB": {
+    "cat": "Humor/Recipes",
+    "doc": "https://www.thecocktaildb.com/api.php",
+    "dsc": "Provides cocktail recipes, some of which can be quite amusing.",
+    "endpoint": "https://www.thecocktaildb.com/api.php",
+    "features": [
+      "Cocktail recipes",
+      "Search by name or ingredient"
+    ],
+    "limit": "Free for all use.",
+    "req": ""
+  },
+  "What's Devin Cooking": {
+    "cat": "Humor/Recipes",
+    "doc": "https://whatsdevincooking.com/",
+    "dsc": "Generates random, humorous cooking recipes.",
+    "endpoint": "https://whatsdevincooking.com/api",
+    "features": [
+      "Random recipe generation",
+      "Satirical food ideas"
+    ],
+    "limit": "Limited by the service's availability; may not always be online.",
+    "req": ""
+  }
+}

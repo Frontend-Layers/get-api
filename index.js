@@ -3,7 +3,6 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import helmetConfig from './app/helmet-config.js';
-import logger from './app/logger.js';
 import apiRoutes from './app/routes.js';
 import notFoundHandler from './app/not-found.js';
 import errorHandler from './app/error-handler.js';

@@ -1,0 +1,14 @@
+{
+  "ColorMind": {
+    "category": "Humor/Design Tools",
+    "description": "Generates color palettes based on user input or randomly.",
+    "endpoint": "http://colormind.io/api/",
+    "features": [
+      "Automatic color palette generation",
+      "Custom palette input"
+    ],
+    "limitations": "Free for all use.",
+    "regions": "Global",
+    "usage": "For fun or creating humorous designs with unexpected color combinations."
+  }
+}

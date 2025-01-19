@@ -1,0 +1,14 @@
+{
+  "XKCD API": {
+    "category": "Humor/Comics",
+    "description": "Access to the XKCD web comic.",
+    "endpoint": "https://xkcd.com/info.0.json",
+    "features": [
+      "Latest comic",
+      "Random comic",
+      "Specific comic by number"
+    ],
+    "limitations": "No stated limitations for free use.",
+    "usage": "Integrating geek humor into applications."
+  }
+}

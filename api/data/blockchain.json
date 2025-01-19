@@ -1,0 +1,30 @@
+{
+  "Blockchain.com": {
+    "cat": "Blockchain",
+    "doc": "https://www.blockchain.com/explorer/api",
+    "dsc": "Provides access to Bitcoin blockchain data, including transactions, addresses, and charts.",
+    "endpoint": "https://blockchain.info/",
+    "features": [
+      "Transaction details",
+      "Address data",
+      "Network charts",
+      "Historical data"
+    ],
+    "limit": "No API key required; subject to rate limits.",
+    "req": ""
+  },
+  "Etherscan": {
+    "cat": "Blockchain",
+    "doc": "https://docs.etherscan.io/",
+    "dsc": "Ethereum blockchain explorer API for accessing transaction, block, and account data.",
+    "endpoint": "https://api.etherscan.io/api",
+    "features": [
+      "Transaction data",
+      "Block details",
+      "Account balances",
+      "Smart contract interaction"
+    ],
+    "limit": "Free tier allows up to 5 requests per second.",
+    "req": "apikey"
+  }
+}

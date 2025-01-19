@@ -1,0 +1,14 @@
+{
+  "Awesome IP": {
+    "cat": "Humor/Internet",
+    "doc": "https://awesomeapi.com/",
+    "dsc": "Fetches IP-based information with a humorous twist.",
+    "endpoint": "https://api.awesomeapi.com/ip",
+    "features": [
+      "IP address information",
+      "Humorous location names"
+    ],
+    "limit": "Free for all use.",
+    "req": ""
+  }
+}

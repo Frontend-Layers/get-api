@@ -1,0 +1,14 @@
+{
+  "Public Holiday API": {
+    "category": "Humor/Calendar",
+    "description": "Lists public holidays which can be used for humorous countdowns or reminders.",
+    "endpoint": "https://date.nager.at/api/v2/publicholidays",
+    "features": [
+      "Public holidays by country",
+      "Yearly holiday lists"
+    ],
+    "limitations": "Free for all use.",
+    "regions": "Global",
+    "usage": "For creating holiday-themed humor or planning."
+  }
+}

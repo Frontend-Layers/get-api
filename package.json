@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "concurrently \"nodemon index.js\" \"node app/open-browser.js\"",
+    "start": "concurrently \"nodemon index.js\" \"node app/browser-sync.js\"",
     "test": "mocha --reporter mochawesome --reporter-options reportDir=./app/public/test/report,reportFilename=index.html,quiet=true",
     "publish": "npm publish --access public"
   },
@@ -16,6 +16,7 @@
     "express-validator": "^7.2.1"
   },
   "devDependencies": {
+    "browser-sync": "^3.0.3",
     "chai": "^5.1.2",
     "compression": "^1.7.5",
     "concurrently": "^9.1.2",

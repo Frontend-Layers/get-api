@@ -1,0 +1,54 @@
+{
+  "FavQs API": {
+    "cat": "Quotes",
+    "doc": "https://favqs.com/api",
+    "dsc": "Provides daily quotes from a variety of authors and topics.",
+    "endpoint": "https://favqs.com/api/qotd",
+    "features": [
+      "Random daily quotes",
+      "Famous author quotes"
+    ],
+    "limit": "Free tier with no specific limitations mentioned.",
+    "regions": "Global",
+    "req": ""
+  },
+  "Inspirational Quotes API": {
+    "cat": "Motivational Quotes",
+    "doc": "https://quotable.io/docs",
+    "dsc": "Provides random inspirational and motivational quotes.",
+    "endpoint": "https://api.quotable.io/random",
+    "features": [
+      "Random inspirational quotes",
+      "Author information included"
+    ],
+    "limit": "Free for all use.",
+    "regions": "Global",
+    "req": ""
+  },
+  "Quotes REST API": {
+    "cat": "Quotes",
+    "doc": "https://quotes.rest/documentation",
+    "dsc": "Provides daily quotes on various categories such as inspiration, life, love, and others.",
+    "endpoint": "https://quotes.rest/qod",
+    "features": [
+      "Daily quotes",
+      "Categories such as inspiration, life, love, etc."
+    ],
+    "limit": "Free for up to 50 requests per day.",
+    "regions": "Global",
+    "req": ""
+  },
+  "They Said So Quotes": {
+    "cat": "Motivational Quotes",
+    "doc": "https://quotes.rest/documentation",
+    "dsc": "Fetches motivational and inspirational quotes.",
+    "endpoint": "https://quotes.rest/qod",
+    "features": [
+      "Daily motivational quotes",
+      "Access to famous quotes"
+    ],
+    "limit": "Free tier provides access to 50 requests per day.",
+    "regions": "Global",
+    "req": ""
+  }
+}

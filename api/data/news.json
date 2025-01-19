@@ -1,0 +1,26 @@
+{
+  "NewsAPI": {
+    "cat": "News",
+    "doc": "https://newsapi.org/docs",
+    "dsc": "Provides real-time news headlines and articles from various sources.",
+    "endpoint": "https://newsapi.org/",
+    "features": [
+      "News headlines",
+      "Topic-specific news"
+    ],
+    "limit": "Free tier supports 1000 requests per day.",
+    "req": "apiKey"
+  },
+  "The Guardian API": {
+    "cat": "News",
+    "doc": "https://open-platform.theguardian.com/documentation/",
+    "dsc": "Accesses articles and metadata from The Guardian's content archive.",
+    "endpoint": "https://content.guardianapis.com/",
+    "features": [
+      "Access news archive",
+      "Metadata extraction"
+    ],
+    "limit": "Free tier allows up to 5000 API calls per day.",
+    "req": "api-key"
+  }
+}

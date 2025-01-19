@@ -1,0 +1,38 @@
+{
+  "DeepL": {
+    "cat": "Translation",
+    "doc": "https://www.deepl.com/docs-api",
+    "dsc": "High-quality text translation with contextual understanding.",
+    "endpoint": "https://api-free.deepl.com/v2/translate",
+    "features": [
+      "High-quality translations",
+      "Contextual understanding"
+    ],
+    "limit": "Free plan limits the number of characters translated per month.",
+    "req": "auth_key"
+  },
+  "LibreTranslate": {
+    "cat": "Translation",
+    "doc": "https://libretranslate.com/docs/",
+    "dsc": "Free translation API for multiple languages.",
+    "endpoint": "https://libretranslate.com/translate",
+    "features": [
+      "Text translation",
+      "Language detection"
+    ],
+    "limit": "Limited to a certain number of translations per day in the free plan.",
+    "req": "api_key"
+  },
+  "Microsoft Translator API": {
+    "cat": "Translation",
+    "doc": "https://learn.microsoft.com/en-us/azure/cognitive-services/translator/",
+    "dsc": "Offers AI-powered text translation in real-time.",
+    "endpoint": "https://api.cognitive.microsofttranslator.com/translate",
+    "features": [
+      "Real-time translation",
+      "AI-powered translations"
+    ],
+    "limit": "Free plan allows 2 million characters per month.",
+    "req": "Ocp-Apim-Subscription-Key"
+  }
+}

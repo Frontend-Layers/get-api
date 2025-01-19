@@ -1,0 +1,111 @@
+{
+  "Animal Image API": {
+    "cat": "Humor/Images",
+    "doc": "https://some-random-api.ml/",
+    "dsc": "Provides images of various animals for humorous or educational purposes.",
+    "endpoint": "https://some-random-api.ml/animal",
+    "features": [
+      "Random animal images",
+      "Specific animal requests"
+    ],
+    "limit": "Free for all use.",
+    "req": ""
+  },
+  "Cat-as-a-Service (CATAAS)": {
+    "cat": "Humor/Images",
+    "doc": "https://cataas.com/",
+    "dsc": "Provides random cat images for your amusement.",
+    "endpoint": "https://cataas.com/cat",
+    "features": [
+      "Random cat images",
+      "Customizable image sizes"
+    ],
+    "limit": "No specific limitations stated; designed for free use.",
+    "req": ""
+  },
+  "Dog API": {
+    "cat": "Humor/Images",
+    "doc": "https://dog.ceo/dog-api/",
+    "dsc": "Provides random dog images with breed information.",
+    "endpoint": "https://dog.ceo/api/breeds/image/random",
+    "features": [
+      "Random dog images",
+      "Breed-specific images"
+    ],
+    "limit": "Unlimited for free use.",
+    "req": ""
+  },
+  "Lorem Picsum": {
+    "cat": "Humor/Images",
+    "doc": "https://picsum.photos/",
+    "dsc": "Provides placeholder images, some with a humorous twist.",
+    "endpoint": "https://picsum.photos/",
+    "features": [
+      "Random placeholder images",
+      "Image size customization",
+      "Grayscale option"
+    ],
+    "limit": "Free for all use.",
+    "req": ""
+  },
+  "PlaceKitten": {
+    "cat": "Humor/Images",
+    "doc": "https://placekitten.com/",
+    "dsc": "Delivers placeholder images of kittens.",
+    "endpoint": "https://placekitten.com/",
+    "features": [
+      "Kitten image placeholders",
+      "Size customization"
+    ],
+    "limit": "Free for all use.",
+    "req": ""
+  },
+  "Random Cat Image": {
+    "cat": "Humor/Images",
+    "doc": "https://aws.random.cat/",
+    "dsc": "Delivers random cat images for a dose of feline humor.",
+    "endpoint": "https://aws.random.cat/meow",
+    "features": [
+      "Random cat images",
+      "Simple API response"
+    ],
+    "limit": "Free for all use.",
+    "req": ""
+  },
+  "Random Duck": {
+    "cat": "Humor/Images",
+    "doc": "https://random-d.uk/",
+    "dsc": "Provides random duck images for duck enthusiasts or humor.",
+    "endpoint": "https://random-d.uk/api/v2/random",
+    "features": [
+      "Random duck images",
+      "Image metadata"
+    ],
+    "limit": "Free for all use.",
+    "req": ""
+  },
+  "Random Pics": {
+    "cat": "Humor/Images",
+    "doc": "https://random-pics.glitch.me/",
+    "dsc": "Delivers random, often funny or bizarre, pictures.",
+    "endpoint": "https://random-pics.glitch.me/random",
+    "features": [
+      "Random image selection",
+      "Unpredictable content"
+    ],
+    "limit": "Limited by Glitch's free tier; may not always be online.",
+    "req": ""
+  },
+  "Shibe Online": {
+    "cat": "Humor/Images",
+    "doc": "http://shibe.online/",
+    "dsc": "Offers random images of Shiba Inus for dog lovers or meme enthusiasts.",
+    "endpoint": "http://shibe.online/api/shibes?count=1",
+    "features": [
+      "Random Shiba Inu images",
+      "Multiple image request"
+    ],
+    "limit": "Free for all use.",
+    "req": ""
+  }
+}

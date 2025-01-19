@@ -1,0 +1,15 @@
+{
+  "Text Complexity API": {
+    "cat": "Text Processing",
+    "doc": "https://readable.com/api/",
+    "dsc": "Analyzes text complexity and provides readability metrics.",
+    "endpoint": "https://readable.com/api/v1/complexity",
+    "features": [
+      "Readability scores",
+      "Complexity analysis",
+      "Grade level assessment"
+    ],
+    "limit": "100 requests per day in free plan.",
+    "req": "api_key"
+  }
+}

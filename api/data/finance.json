@@ -1,0 +1,44 @@
+{
+  "Alpha Vantage": {
+    "cat": "Finance",
+    "doc": "https://www.alphavantage.co/documentation/",
+    "dsc": "Provides real-time and historical data on stocks, currencies, and cryptocurrencies.",
+    "endpoint": "https://www.alphavantage.co/query",
+    "features": [
+      "Stock data",
+      "Cryptocurrency data",
+      "Forex data",
+      "Technical indicators"
+    ],
+    "limit": "Free tier allows up to 5 API requests per minute and 500 requests per day.",
+    "req": "apikey"
+  },
+  "Finnhub": {
+    "cat": "Finance",
+    "doc": "https://finnhub.io/docs/api",
+    "dsc": "Provides stock, forex, and cryptocurrency data, including news and sentiment analysis.",
+    "endpoint": "https://finnhub.io/api/v1",
+    "features": [
+      "Market data",
+      "Sentiment analysis",
+      "News aggregation",
+      "Real-time updates"
+    ],
+    "limit": "Free tier allows 60 API calls per minute.",
+    "req": "token"
+  },
+  "Polygon.io": {
+    "cat": "Finance",
+    "doc": "https://polygon.io/docs",
+    "dsc": "Real-time and historical stock, forex, and cryptocurrency market data.",
+    "endpoint": "https://api.polygon.io/v1",
+    "features": [
+      "Real-time stock data",
+      "Forex rates",
+      "Cryptocurrency market data",
+      "Historical analysis"
+    ],
+    "limit": "Free plan allows limited access to data and APIs.",
+    "req": "apiKey"
+  }
+}

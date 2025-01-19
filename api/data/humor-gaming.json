@@ -1,0 +1,15 @@
+{
+  "PokeAPI": {
+    "cat": "Humor/Gaming",
+    "doc": "https://pokeapi.co/",
+    "dsc": "Provides data on Pokémon, which can be used for humorous applications.",
+    "endpoint": "https://pokeapi.co/api/v2/pokemon",
+    "features": [
+      "Pokémon data",
+      "Species information",
+      "Moves and abilities"
+    ],
+    "limit": "Free for all use.",
+    "req": ""
+  }
+}

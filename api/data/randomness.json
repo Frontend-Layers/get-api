@@ -1,0 +1,28 @@
+{
+  "RANDOM.ORG": {
+    "cat": "Randomness",
+    "doc": "https://www.random.org/",
+    "dsc": "Generates truly random numbers or strings, with some fun uses.",
+    "endpoint": "https://api.random.org/json-rpc/1/invoke",
+    "features": [
+      "Truly random numbers",
+      "Random string generation"
+    ],
+    "limit": "Free tier with limitations on request frequency.",
+    "regions": "Global",
+    "req": ""
+  },
+  "Random Number Generator": {
+    "cat": "Randomness",
+    "doc": "https://www.random.org/",
+    "dsc": "Generates truly random numbers for games or humorous scenarios.",
+    "endpoint": "https://random.org/integers/",
+    "features": [
+      "True random number generation",
+      "Customizable range and count"
+    ],
+    "limit": "Free tier with limitations on request frequency.",
+    "regions": "Global",
+    "req": ""
+  }
+}

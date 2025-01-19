@@ -1,0 +1,92 @@
+{
+  "Cat Fact API": {
+    "cat": "Humor/Facts",
+    "doc": "https://alexwohlbruck.github.io/cat-facts/",
+    "dsc": "Provides fun and interesting facts about cats.",
+    "endpoint": "https://alexwohlbruck.github.io/cat-facts/",
+    "features": [
+      "Random cat facts",
+      "Daily cat facts"
+    ],
+    "limit": "Unlimited for free use.",
+    "req": ""
+  },
+  "Random Cat Facts": {
+    "cat": "Humor/Facts",
+    "doc": "https://catfact.ninja/fact",
+    "dsc": "Delivers random, often amusing or educational facts about cats.",
+    "endpoint": "https://catfact.ninja/fact",
+    "features": [
+      "Random cat facts",
+      "Fact of the day"
+    ],
+    "limit": "Free for all use.",
+    "regions": "Global",
+    "req": ""
+  },
+  "Random Dog Facts": {
+    "cat": "Humor/Facts",
+    "doc": "https://dogapi.dog/api/v2/facts",
+    "dsc": "Offers random facts about dogs, often humorous or surprising.",
+    "endpoint": "https://dogapi.dog/api/v2/facts",
+    "features": [
+      "Random dog facts",
+      "Fact collection"
+    ],
+    "limit": "Free for all use.",
+    "regions": "Global",
+    "req": ""
+  },
+  "Random Fact Generator": {
+    "cat": "Humor/Facts",
+    "doc": "https://uselessfacts.jsph.pl/api/v2/facts/random",
+    "dsc": "Supplies random facts which can be both educational and amusing.",
+    "endpoint": "https://uselessfacts.jsph.pl/api/v2/facts/random",
+    "features": [
+      "Random fact generation",
+      "Variety of fact sources"
+    ],
+    "limit": "Free for all use.",
+    "regions": "Global",
+    "req": ""
+  },
+  "Random Facts": {
+    "cat": "Humor/Facts",
+    "doc": "https://uselessfacts.jsph.pl/random.json?language=en",
+    "dsc": "Delivers random, often surprising or humorous, facts.",
+    "endpoint": "https://uselessfacts.jsph.pl/random.json?language=en",
+    "features": [
+      "Random fact generation",
+      "Multi-language support"
+    ],
+    "limit": "Free for all use.",
+    "regions": "Global",
+    "req": ""
+  },
+  "RandomUselessFacts": {
+    "cat": "Humor/Facts",
+    "doc": "https://uselessfacts.jsph.pl/random.json?language=en",
+    "dsc": "Delivers random, often humorous or obscure, facts.",
+    "endpoint": "https://uselessfacts.jsph.pl/random.json?language=en",
+    "features": [
+      "Random useless facts",
+      "Multi-language support"
+    ],
+    "limit": "Free for all use.",
+    "regions": "Global",
+    "req": ""
+  },
+  "Useless Facts API": {
+    "cat": "Humor/Facts",
+    "doc": "https://uselessfacts.jsph.pl/random.json?language=en",
+    "dsc": "Delivers random, often trivial or humorous facts.",
+    "endpoint": "https://uselessfacts.jsph.pl/random.json?language=en",
+    "features": [
+      "Random useless facts",
+      "Multi-language support"
+    ],
+    "limit": "Free for all use.",
+    "regions": "Global",
+    "req": ""
+  }
+}

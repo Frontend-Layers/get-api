@@ -1,0 +1,145 @@
+{
+  "Content Moderation API": {
+    "cat": "Text Processing",
+    "doc": "https://moderatecontent.com/",
+    "dsc": "Detects and filters inappropriate content and profanity.",
+    "endpoint": "https://api.moderatecontent.com/v1/moderate",
+    "features": [
+      "Profanity detection",
+      "Content classification",
+      "Automated moderation"
+    ],
+    "limit": "1000 requests per day in free plan.",
+    "req": "api_key"
+  },
+  "Document Conversion API": {
+    "cat": "Text Processing",
+    "doc": "https://cloudconvert.com/api",
+    "dsc": "Converts documents between different formats.",
+    "endpoint": "https://api.cloudconvert.com/convert",
+    "features": [
+      "Format conversion",
+      "Batch processing",
+      "Quality preservation"
+    ],
+    "limit": "25 conversions per day in free plan.",
+    "req": "api_key"
+  },
+  "Handwriting Recognition API": {
+    "cat": "Text Processing",
+    "doc": "https://cloud.google.com/vision/docs/handwriting",
+    "dsc": "Converts handwritten text to digital format.",
+    "endpoint": "https://vision.googleapis.com/v1/images:annotate",
+    "features": [
+      "Handwriting to text",
+      "Multiple language support",
+      "Style recognition"
+    ],
+    "limit": "1000 requests per month free.",
+    "req": "key"
+  },
+  "Language Detection API": {
+    "cat": "Text Processing",
+    "doc": "https://detectlanguage.com/",
+    "dsc": "Identifies the language of provided text content.",
+    "endpoint": "https://detectlanguage.com/detect",
+    "features": [
+      "Language identification",
+      "Script detection",
+      "Confidence scoring"
+    ],
+    "limit": "1000 requests per day in free plan.",
+    "req": "key"
+  },
+  "Plagiarism Checker API": {
+    "cat": "Text Processing",
+    "doc": "https://copyleaks.com/api/",
+    "dsc": "Checks text content for potential plagiarism and similarity.",
+    "endpoint": "https://api.copyleaks.com/v3/",
+    "features": [
+      "Similarity detection",
+      "Source attribution",
+      "Content verification"
+    ],
+    "limit": "2500 words per month in free plan.",
+    "req": "apiKey"
+  },
+  "Speech Recognition API": {
+    "cat": "Text Processing",
+    "doc": "https://cloud.google.com/speech-to-text",
+    "dsc": "Converts spoken audio to text.",
+    "endpoint": "https://speech.googleapis.com/v1/speech:recognize",
+    "features": [
+      "Audio transcription",
+      "Real-time recognition",
+      "Multiple language support"
+    ],
+    "limit": "60 minutes free per month.",
+    "req": "key"
+  },
+  "Text Analytics API": {
+    "cat": "Text Processing",
+    "doc": "https://azure.microsoft.com/services/cognitive-services/text-analytics/",
+    "dsc": "Provides comprehensive text analysis and insights.",
+    "endpoint": "https://api.cognitive.microsoft.com/text/analytics/v3.0/keyPhrases",
+    "features": [
+      "Sentiment analysis",
+      "Key phrase extraction",
+      "Language detection"
+    ],
+    "limit": "5,000 transactions per month free.",
+    "req": "Ocp-Apim-Subscription-Key"
+  },
+  "Text Autocomplete API": {
+    "cat": "Text Processing",
+    "doc": "https://words.bighugelabs.com/api",
+    "dsc": "Provides intelligent text completion suggestions.",
+    "endpoint": "https://words.bighugelabs.com/api/2/",
+    "features": [
+      "Word completion",
+      "Phrase suggestions",
+      "Context awareness"
+    ],
+    "limit": "10,000 requests per day in free plan.",
+    "req": "apiKey"
+  },
+  "Text Classification API": {
+    "cat": "Text Processing",
+    "doc": "https://classify.ai/text-classification",
+    "dsc": "Automatically categorizes text into predefined categories.",
+    "endpoint": "https://classify.ai/text-classification",
+    "features": [
+      "Topic classification",
+      "Content categorization",
+      "Multi-label classification"
+    ],
+    "limit": "500 requests per day in free tier.",
+    "req": "api_key"
+  },
+  "Text Extraction API": {
+    "cat": "Text Processing",
+    "doc": "https://textrazor.com/",
+    "dsc": "Extracts structured data from unstructured text.",
+    "endpoint": "https://api.textrazor.com/",
+    "features": [
+      "Entity extraction",
+      "Relationship extraction",
+      "Topic extraction"
+    ],
+    "limit": "500 requests per day in free plan.",
+    "req": "apiKey"
+  },
+  "Text-to-Speech API": {
+    "cat": "Text Processing",
+    "doc": "https://cloud.google.com/text-to-speech",
+    "dsc": "Converts text into natural-sounding speech.",
+    "endpoint": "https://texttospeech.googleapis.com/v1/text:synthesize",
+    "features": [
+      "Multiple voices",
+      "Language support",
+      "SSML support"
+    ],
+    "limit": "1 million characters per month in free tier.",
+    "req": "key"
+  }
+}

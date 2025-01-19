@@ -1,0 +1,30 @@
+{
+  "CoinGecko": {
+    "cat": "Cryptocurrency",
+    "doc": "https://www.coingecko.com/en/api/documentation",
+    "dsc": "Provides cryptocurrency market data, including prices, market caps, and trends.",
+    "endpoint": "https://api.coingecko.com/api/v3",
+    "features": [
+      "Market trends",
+      "Price tracking",
+      "Historical data",
+      "Market capitalization"
+    ],
+    "limit": "No API key required; rate-limited to 50 requests per minute.",
+    "req": ""
+  },
+  "CoinMarketCap": {
+    "cat": "Cryptocurrency",
+    "doc": "https://coinmarketcap.com/api/documentation/v1/",
+    "dsc": "Tracks cryptocurrency prices, volumes, and market data.",
+    "endpoint": "https://pro-api.coinmarketcap.com/v1",
+    "features": [
+      "Price tracking",
+      "Market volume",
+      "Global market trends",
+      "Data analysis"
+    ],
+    "limit": "Free tier allows 10,000 credits per month.",
+    "req": "CMC_PRO_API_KEY"
+  }
+}

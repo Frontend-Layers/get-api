@@ -1,0 +1,15 @@
+{
+  "Giphy API": {
+    "cat": "Humor/Media",
+    "doc": "https://developers.giphy.com/docs/api/#random",
+    "dsc": "Searches or retrieves random GIFs for humorous content.",
+    "endpoint": "https://api.giphy.com/v1/gifs/random",
+    "features": [
+      "Random GIFs",
+      "Search by keyword",
+      "Trending GIFs"
+    ],
+    "limit": "Requires an API key; free tier with 1000 daily searches.",
+    "req": "api_key"
+  }
+}
