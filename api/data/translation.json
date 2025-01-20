@@ -9,7 +9,8 @@
       "Contextual understanding"
     ],
     "limit": "Free plan limits the number of characters translated per month.",
-    "req": "auth_key"
+    "access_key": "auth_key",
+    "request_key": "text"
   },
   "LibreTranslate": {
     "cat": "Translation",
@@ -21,7 +22,8 @@
       "Language detection"
     ],
     "limit": "Limited to a certain number of translations per day in the free plan.",
-    "req": "api_key"
+    "access_key": "api_key",
+    "request_key": "q"
   },
   "Microsoft Translator API": {
     "cat": "Translation",
@@ -33,6 +35,7 @@
       "AI-powered translations"
     ],
     "limit": "Free plan allows 2 million characters per month.",
-    "req": "Ocp-Apim-Subscription-Key"
+    "access_key": "Ocp-Apim-Subscription-Key",
+    "request_key": "text"
   }
 }

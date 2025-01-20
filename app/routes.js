@@ -72,7 +72,7 @@ router.get('/api', [
       userAgent: req.get('user-agent'),
     });
 
-    const data = await fetchData(service, { q });
+    const data = await fetchData(service, q);
     res.json(data);
   } catch (error) {
     next(error);
@@ -93,6 +93,13 @@ router.get(['/catalogue', '/catalogue.html'], async (req, res, next) => {
     logger.error('Error reading JSON files', { error: error.message });
     next(error);
   }
+});
+
+router.get('/status', (req, res) => {
+  res.status(200).json({
+    message: "Server is running",
+    timestamp: new Date().toISOString(),
+  });
 });
 
 export default router;

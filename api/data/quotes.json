@@ -10,7 +10,8 @@
     ],
     "limit": "Free tier with no specific limitations mentioned.",
     "regions": "Global",
-    "req": ""
+    "access_key": "",
+    "request_key": "qotd"
   },
   "Inspirational Quotes API": {
     "cat": "Motivational Quotes",
@@ -23,11 +24,12 @@
     ],
     "limit": "Free for all use.",
     "regions": "Global",
-    "req": ""
+    "access_key": "",
+    "request_key": "random"
   },
   "Quotes REST API": {
     "cat": "Quotes",
-    "doc": "https://quotes.rest/documentation",
+    "doc": "https://quotes.rest/docs",
     "dsc": "Provides daily quotes on various categories such as inspiration, life, love, and others.",
     "endpoint": "https://quotes.rest/qod",
     "features": [
@@ -36,19 +38,7 @@
     ],
     "limit": "Free for up to 50 requests per day.",
     "regions": "Global",
-    "req": ""
-  },
-  "They Said So Quotes": {
-    "cat": "Motivational Quotes",
-    "doc": "https://quotes.rest/documentation",
-    "dsc": "Fetches motivational and inspirational quotes.",
-    "endpoint": "https://quotes.rest/qod",
-    "features": [
-      "Daily motivational quotes",
-      "Access to famous quotes"
-    ],
-    "limit": "Free tier provides access to 50 requests per day.",
-    "regions": "Global",
-    "req": ""
+    "access_key": "",
+    "request_key": "qod"
   }
 }

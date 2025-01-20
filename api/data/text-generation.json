@@ -3,13 +3,14 @@
     "cat": "Humor/Text Generation",
     "doc": "https://baconipsum.com/",
     "dsc": "Generates placeholder text themed around bacon.",
-    "endpoint": "https://baconipsum.com/json-api/",
+    "endpoint": "https://baconipsum.com/api/",
     "features": [
       "Bacon-themed lorem ipsum",
       "Customizable text length"
     ],
     "limit": "Free for personal use.",
-    "req": ""
+    "access_key": "",
+    "request_key": "type"
   },
   "Hipster Ipsum": {
     "cat": "Humor/Text Generation",
@@ -21,34 +22,34 @@
       "Customizable paragraph count"
     ],
     "limit": "Free for all use.",
-    "regions": "Global",
-    "req": ""
+    "access_key": "",
+    "request_key": "type"
   },
   "Public Apology Generator": {
     "cat": "Humor/Text Generation",
     "doc": "https://public-apology-generator.glitch.me/",
     "dsc": "Generates humorous public apologies for fictional scenarios.",
-    "endpoint": "https://public-apology-generator.glitch.me/api",
+    "endpoint": "https://public-apology-generator.glitch.me/api/generate",
     "features": [
       "Random public apologies",
       "Customizable scenarios"
     ],
     "limit": "Limited by Glitch's free tier; may not always be online.",
-    "regions": "Global",
-    "req": ""
+    "access_key": "",
+    "request_key": "type"
   },
   "Random Name Generator": {
     "cat": "Humor/Text Generation",
     "doc": "https://randomname.de/",
     "dsc": "Generates random, potentially humorous names for characters or users.",
-    "endpoint": "https://randomname.de/",
+    "endpoint": "https://randomname.de/api",
     "features": [
       "Random name generation",
       "Multiple name styles"
     ],
     "limit": "Free for all use.",
-    "regions": "Global",
-    "req": ""
+    "access_key": "",
+    "request_key": "type"
   },
   "Space Ipsum": {
     "cat": "Humor/Text Generation",
@@ -60,18 +61,20 @@
       "Customizable text length"
     ],
     "limit": "Free for personal use.",
-    "req": ""
+    "access_key": "",
+    "request_key": "type"
   },
   "Zombie Ipsum": {
     "cat": "Humor/Text Generation",
     "doc": "https://zombieipsum.com/",
     "dsc": "Generates zombie-themed placeholder text.",
-    "endpoint": "https://zombieipsum.com/api/",
+    "endpoint": "https://zombieipsum.com/api",
     "features": [
       "Zombie-themed text",
       "Customizable paragraph count"
     ],
     "limit": "Free for personal use.",
-    "req": ""
+    "access_key": "",
+    "request_key": "type"
   }
 }

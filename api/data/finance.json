@@ -11,7 +11,8 @@
       "Technical indicators"
     ],
     "limit": "Free tier allows up to 5 API requests per minute and 500 requests per day.",
-    "req": "apikey"
+    "access_key": "apikey",
+    "request_key": "function"
   },
   "Finnhub": {
     "cat": "Finance",
@@ -25,13 +26,14 @@
       "Real-time updates"
     ],
     "limit": "Free tier allows 60 API calls per minute.",
-    "req": "token"
+    "access_key": "token",
+    "request_key": "symbol"
   },
   "Polygon.io": {
     "cat": "Finance",
     "doc": "https://polygon.io/docs",
     "dsc": "Real-time and historical stock, forex, and cryptocurrency market data.",
-    "endpoint": "https://api.polygon.io/v1",
+    "endpoint": "https://api.polygon.io/v2/aggs/ticker",
     "features": [
       "Real-time stock data",
       "Forex rates",
@@ -39,6 +41,7 @@
       "Historical analysis"
     ],
     "limit": "Free plan allows limited access to data and APIs.",
-    "req": "apiKey"
+    "access_key": "apiKey",
+    "request_key": "symbol"
   }
 }
