@@ -3,13 +3,14 @@
     "cat": "Humor/Recipes",
     "doc": "https://www.thecocktaildb.com/api.php",
     "dsc": "Provides cocktail recipes, some of which can be quite amusing.",
-    "endpoint": "https://www.thecocktaildb.com/api.php",
+    "endpoint": "https://www.thecocktaildb.com/api/json/v1/1/search.php",
     "features": [
       "Cocktail recipes",
       "Search by name or ingredient"
     ],
     "limit": "Free for all use.",
-    "req": ""
+    "access_key": "",
+    "request_key": "s"
   },
   "What's Devin Cooking": {
     "cat": "Humor/Recipes",
@@ -21,6 +22,7 @@
       "Satirical food ideas"
     ],
     "limit": "Limited by the service's availability; may not always be online.",
-    "req": ""
+    "access_key": "",
+    "request_key": "type"
   }
 }

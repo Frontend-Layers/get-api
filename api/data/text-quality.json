@@ -10,6 +10,7 @@
       "Grade level assessment"
     ],
     "limit": "100 requests per day in free plan.",
-    "req": "api_key"
+    "access_key": "api_key",
+    "request_key": "text"
   }
 }

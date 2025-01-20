@@ -10,7 +10,8 @@
       "Automated moderation"
     ],
     "limit": "1000 requests per day in free plan.",
-    "req": "api_key"
+    "access_key": "api_key",
+    "request_key": "content"
   },
   "Document Conversion API": {
     "cat": "Text Processing",
@@ -23,7 +24,8 @@
       "Quality preservation"
     ],
     "limit": "25 conversions per day in free plan.",
-    "req": "api_key"
+    "access_key": "api_key",
+    "request_key": "file"
   },
   "Handwriting Recognition API": {
     "cat": "Text Processing",
@@ -36,7 +38,8 @@
       "Style recognition"
     ],
     "limit": "1000 requests per month free.",
-    "req": "key"
+    "access_key": "key",
+    "request_key": "image"
   },
   "Language Detection API": {
     "cat": "Text Processing",
@@ -49,20 +52,22 @@
       "Confidence scoring"
     ],
     "limit": "1000 requests per day in free plan.",
-    "req": "key"
+    "access_key": "key",
+    "request_key": "q"
   },
   "Plagiarism Checker API": {
     "cat": "Text Processing",
     "doc": "https://copyleaks.com/api/",
     "dsc": "Checks text content for potential plagiarism and similarity.",
-    "endpoint": "https://api.copyleaks.com/v3/",
+    "endpoint": "https://api.copyleaks.com/v3/education",
     "features": [
       "Similarity detection",
       "Source attribution",
       "Content verification"
     ],
     "limit": "2500 words per month in free plan.",
-    "req": "apiKey"
+    "access_key": "apiKey",
+    "request_key": "text"
   },
   "Speech Recognition API": {
     "cat": "Text Processing",
@@ -75,7 +80,8 @@
       "Multiple language support"
     ],
     "limit": "60 minutes free per month.",
-    "req": "key"
+    "access_key": "key",
+    "request_key": "audio"
   },
   "Text Analytics API": {
     "cat": "Text Processing",
@@ -88,7 +94,8 @@
       "Language detection"
     ],
     "limit": "5,000 transactions per month free.",
-    "req": "Ocp-Apim-Subscription-Key"
+    "access_key": "Ocp-Apim-Subscription-Key",
+    "request_key": "documents"
   },
   "Text Autocomplete API": {
     "cat": "Text Processing",
@@ -101,7 +108,8 @@
       "Context awareness"
     ],
     "limit": "10,000 requests per day in free plan.",
-    "req": "apiKey"
+    "access_key": "apiKey",
+    "request_key": "text"
   },
   "Text Classification API": {
     "cat": "Text Processing",
@@ -114,7 +122,8 @@
       "Multi-label classification"
     ],
     "limit": "500 requests per day in free tier.",
-    "req": "api_key"
+    "access_key": "api_key",
+    "request_key": "text"
   },
   "Text Extraction API": {
     "cat": "Text Processing",
@@ -127,7 +136,8 @@
       "Topic extraction"
     ],
     "limit": "500 requests per day in free plan.",
-    "req": "apiKey"
+    "access_key": "apiKey",
+    "request_key": "text"
   },
   "Text-to-Speech API": {
     "cat": "Text Processing",
@@ -140,6 +150,7 @@
       "SSML support"
     ],
     "limit": "1 million characters per month in free tier.",
-    "req": "key"
+    "access_key": "key",
+    "request_key": "input"
   }
 }

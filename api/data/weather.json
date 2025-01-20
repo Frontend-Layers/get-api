@@ -9,7 +9,8 @@
       "Coverage for over 200,000 cities"
     ],
     "limit": "Free tier allows 60 calls per minute.",
-    "req": "appid"
+    "access_key": "appid",
+    "request_key": "q"
   },
   "WeatherAPI": {
     "cat": "Weather Data",
@@ -21,7 +22,8 @@
       "Forecasts for cities worldwide"
     ],
     "limit": "Free tier allows 1,000 calls per month.",
-    "req": "key"
+    "access_key": "key",
+    "request_key": "q"
   },
   "WeatherStack": {
     "cat": "Weather Data",
@@ -33,6 +35,7 @@
       "Historical weather data"
     ],
     "limit": "Free tier allows 250 calls per month.",
-    "req": "access_key"
+    "access_key": "access_key",
+    "request_key": "query"
   }
 }

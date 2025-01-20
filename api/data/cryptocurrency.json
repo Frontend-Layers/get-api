@@ -11,7 +11,8 @@
       "Market capitalization"
     ],
     "limit": "No API key required; rate-limited to 50 requests per minute.",
-    "req": ""
+    "access_key": "",
+    "request_key": "ids"
   },
   "CoinMarketCap": {
     "cat": "Cryptocurrency",
@@ -25,6 +26,7 @@
       "Data analysis"
     ],
     "limit": "Free tier allows 10,000 credits per month.",
-    "req": "CMC_PRO_API_KEY"
+    "access_key": "CMC_PRO_API_KEY",
+    "request_key": "symbol"
   }
 }

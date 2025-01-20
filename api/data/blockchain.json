@@ -3,7 +3,7 @@
     "cat": "Blockchain",
     "doc": "https://www.blockchain.com/explorer/api",
     "dsc": "Provides access to Bitcoin blockchain data, including transactions, addresses, and charts.",
-    "endpoint": "https://blockchain.info/",
+    "endpoint": "https://api.blockchain.com/v3",
     "features": [
       "Transaction details",
       "Address data",
@@ -11,7 +11,8 @@
       "Historical data"
     ],
     "limit": "No API key required; subject to rate limits.",
-    "req": ""
+    "access_key": "",
+    "request_key": "txid"
   },
   "Etherscan": {
     "cat": "Blockchain",
@@ -25,6 +26,7 @@
       "Smart contract interaction"
     ],
     "limit": "Free tier allows up to 5 requests per second.",
-    "req": "apikey"
+    "access_key": "apikey",
+    "request_key": "module"
   }
 }

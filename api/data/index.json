@@ -1,0 +1,581 @@
+{
+  "Blockchain.com": {
+    "cat": "Blockchain",
+    "doc": "https://www.blockchain.com/explorer/api",
+    "dsc": "Provides access to Bitcoin blockchain data, including transactions, addresses, and charts.",
+    "endpoint": "https://api.blockchain.com/v3",
+    "features": [
+      "Transaction details",
+      "Address data",
+      "Network charts",
+      "Historical data"
+    ],
+    "limit": "No API key required; subject to rate limits.",
+    "access_key": "",
+    "request_key": "txid"
+  },
+  "Etherscan": {
+    "cat": "Blockchain",
+    "doc": "https://docs.etherscan.io/",
+    "dsc": "Ethereum blockchain explorer API for accessing transaction, block, and account data.",
+    "endpoint": "https://api.etherscan.io/api",
+    "features": [
+      "Transaction data",
+      "Block details",
+      "Account balances",
+      "Smart contract interaction"
+    ],
+    "limit": "Free tier allows up to 5 requests per second.",
+    "access_key": "apikey",
+    "request_key": "module"
+  },
+  "CoinGecko": {
+    "cat": "Cryptocurrency",
+    "doc": "https://www.coingecko.com/en/api/documentation",
+    "dsc": "Provides cryptocurrency market data, including prices, market caps, and trends.",
+    "endpoint": "https://api.coingecko.com/api/v3",
+    "features": [
+      "Market trends",
+      "Price tracking",
+      "Historical data",
+      "Market capitalization"
+    ],
+    "limit": "No API key required; rate-limited to 50 requests per minute.",
+    "access_key": "",
+    "request_key": "ids"
+  },
+  "CoinMarketCap": {
+    "cat": "Cryptocurrency",
+    "doc": "https://coinmarketcap.com/api/documentation/v1/",
+    "dsc": "Tracks cryptocurrency prices, volumes, and market data.",
+    "endpoint": "https://pro-api.coinmarketcap.com/v1",
+    "features": [
+      "Price tracking",
+      "Market volume",
+      "Global market trends",
+      "Data analysis"
+    ],
+    "limit": "Free tier allows 10,000 credits per month.",
+    "access_key": "CMC_PRO_API_KEY",
+    "request_key": "symbol"
+  },
+  "Alpha Vantage": {
+    "cat": "Finance",
+    "doc": "https://www.alphavantage.co/documentation/",
+    "dsc": "Provides real-time and historical data on stocks, currencies, and cryptocurrencies.",
+    "endpoint": "https://www.alphavantage.co/query",
+    "features": [
+      "Stock data",
+      "Cryptocurrency data",
+      "Forex data",
+      "Technical indicators"
+    ],
+    "limit": "Free tier allows up to 5 API requests per minute and 500 requests per day.",
+    "access_key": "apikey",
+    "request_key": "function"
+  },
+  "Finnhub": {
+    "cat": "Finance",
+    "doc": "https://finnhub.io/docs/api",
+    "dsc": "Provides stock, forex, and cryptocurrency data, including news and sentiment analysis.",
+    "endpoint": "https://finnhub.io/api/v1",
+    "features": [
+      "Market data",
+      "Sentiment analysis",
+      "News aggregation",
+      "Real-time updates"
+    ],
+    "limit": "Free tier allows 60 API calls per minute.",
+    "access_key": "token",
+    "request_key": "symbol"
+  },
+  "Polygon.io": {
+    "cat": "Finance",
+    "doc": "https://polygon.io/docs",
+    "dsc": "Real-time and historical stock, forex, and cryptocurrency market data.",
+    "endpoint": "https://api.polygon.io/v2/aggs/ticker",
+    "features": [
+      "Real-time stock data",
+      "Forex rates",
+      "Cryptocurrency market data",
+      "Historical analysis"
+    ],
+    "limit": "Free plan allows limited access to data and APIs.",
+    "access_key": "apiKey",
+    "request_key": "symbol"
+  },
+  "NewsAPI": {
+    "cat": "News",
+    "doc": "https://newsapi.org/docs",
+    "dsc": "Provides real-time news headlines and articles from various sources.",
+    "endpoint": "https://newsapi.org/v2/top-headlines",
+    "features": [
+      "News headlines",
+      "Topic-specific news"
+    ],
+    "limit": "Free tier supports 1000 requests per day.",
+    "access_key": "apiKey",
+    "request_key": "q"
+  },
+  "The Guardian API": {
+    "cat": "News",
+    "doc": "https://open-platform.theguardian.com/documentation/",
+    "dsc": "Accesses articles and metadata from The Guardian's content archive.",
+    "endpoint": "https://content.guardianapis.com/search",
+    "features": [
+      "Access news archive",
+      "Metadata extraction"
+    ],
+    "limit": "Free tier allows up to 5000 API calls per day.",
+    "access_key": "api-key",
+    "request_key": "q"
+  },
+  "FavQs API": {
+    "cat": "Quotes",
+    "doc": "https://favqs.com/api",
+    "dsc": "Provides daily quotes from a variety of authors and topics.",
+    "endpoint": "https://favqs.com/api/qotd",
+    "features": [
+      "Random daily quotes",
+      "Famous author quotes"
+    ],
+    "limit": "Free tier with no specific limitations mentioned.",
+    "regions": "Global",
+    "access_key": "",
+    "request_key": "qotd"
+  },
+  "Inspirational Quotes API": {
+    "cat": "Motivational Quotes",
+    "doc": "https://quotable.io/docs",
+    "dsc": "Provides random inspirational and motivational quotes.",
+    "endpoint": "https://api.quotable.io/random",
+    "features": [
+      "Random inspirational quotes",
+      "Author information included"
+    ],
+    "limit": "Free for all use.",
+    "regions": "Global",
+    "access_key": "",
+    "request_key": "random"
+  },
+  "Quotes REST API": {
+    "cat": "Quotes",
+    "doc": "https://quotes.rest/docs",
+    "dsc": "Provides daily quotes on various categories such as inspiration, life, love, and others.",
+    "endpoint": "https://quotes.rest/qod",
+    "features": [
+      "Daily quotes",
+      "Categories such as inspiration, life, love, etc."
+    ],
+    "limit": "Free for up to 50 requests per day.",
+    "regions": "Global",
+    "access_key": "",
+    "request_key": "qod"
+  },
+  "RANDOM.ORG": {
+    "cat": "Randomness",
+    "doc": "https://www.random.org/",
+    "dsc": "Generates truly random numbers or strings, with some fun uses.",
+    "endpoint": "https://api.random.org/json-rpc/2/invoke",
+    "features": [
+      "Truly random numbers",
+      "Random string generation"
+    ],
+    "limit": "Free tier with limitations on request frequency.",
+    "regions": "Global",
+    "access_key": "",
+    "request_key": "params"
+  },
+  "Random Number Generator": {
+    "cat": "Randomness",
+    "doc": "https://www.random.org/",
+    "dsc": "Generates truly random numbers for games or humorous scenarios.",
+    "endpoint": "https://api.random.org/json-rpc/2/invoke",
+    "features": [
+      "True random number generation",
+      "Customizable range and count"
+    ],
+    "limit": "Free tier with limitations on request frequency.",
+    "regions": "Global",
+    "access_key": "",
+    "request_key": "num"
+  },
+  "The Cocktail DB": {
+    "cat": "Humor/Recipes",
+    "doc": "https://www.thecocktaildb.com/api.php",
+    "dsc": "Provides cocktail recipes, some of which can be quite amusing.",
+    "endpoint": "https://www.thecocktaildb.com/api/json/v1/1/search.php",
+    "features": [
+      "Cocktail recipes",
+      "Search by name or ingredient"
+    ],
+    "limit": "Free for all use.",
+    "access_key": "",
+    "request_key": "s"
+  },
+  "What's Devin Cooking": {
+    "cat": "Humor/Recipes",
+    "doc": "https://whatsdevincooking.com/",
+    "dsc": "Generates random, humorous cooking recipes.",
+    "endpoint": "https://whatsdevincooking.com/api",
+    "features": [
+      "Random recipe generation",
+      "Satirical food ideas"
+    ],
+    "limit": "Limited by the service's availability; may not always be online.",
+    "access_key": "",
+    "request_key": "type"
+  },
+  "Bacon Ipsum": {
+    "cat": "Humor/Text Generation",
+    "doc": "https://baconipsum.com/",
+    "dsc": "Generates placeholder text themed around bacon.",
+    "endpoint": "https://baconipsum.com/api/",
+    "features": [
+      "Bacon-themed lorem ipsum",
+      "Customizable text length"
+    ],
+    "limit": "Free for personal use.",
+    "access_key": "",
+    "request_key": "type"
+  },
+  "Hipster Ipsum": {
+    "cat": "Humor/Text Generation",
+    "doc": "https://hipsum.co/",
+    "dsc": "Generates hipster-themed placeholder text for a humorous design touch.",
+    "endpoint": "https://hipsum.co/api/",
+    "features": [
+      "Hipster-themed text",
+      "Customizable paragraph count"
+    ],
+    "limit": "Free for all use.",
+    "access_key": "",
+    "request_key": "type"
+  },
+  "Public Apology Generator": {
+    "cat": "Humor/Text Generation",
+    "doc": "https://public-apology-generator.glitch.me/",
+    "dsc": "Generates humorous public apologies for fictional scenarios.",
+    "endpoint": "https://public-apology-generator.glitch.me/api/generate",
+    "features": [
+      "Random public apologies",
+      "Customizable scenarios"
+    ],
+    "limit": "Limited by Glitch's free tier; may not always be online.",
+    "access_key": "",
+    "request_key": "type"
+  },
+  "Random Name Generator": {
+    "cat": "Humor/Text Generation",
+    "doc": "https://randomname.de/",
+    "dsc": "Generates random, potentially humorous names for characters or users.",
+    "endpoint": "https://randomname.de/api",
+    "features": [
+      "Random name generation",
+      "Multiple name styles"
+    ],
+    "limit": "Free for all use.",
+    "access_key": "",
+    "request_key": "type"
+  },
+  "Space Ipsum": {
+    "cat": "Humor/Text Generation",
+    "doc": "https://spaceipsum.com/",
+    "dsc": "Generates space-themed placeholder text for sci-fi enthusiasts.",
+    "endpoint": "https://spaceipsum.com/api",
+    "features": [
+      "Space-themed lorem ipsum",
+      "Customizable text length"
+    ],
+    "limit": "Free for personal use.",
+    "access_key": "",
+    "request_key": "type"
+  },
+  "Zombie Ipsum": {
+    "cat": "Humor/Text Generation",
+    "doc": "https://zombieipsum.com/",
+    "dsc": "Generates zombie-themed placeholder text.",
+    "endpoint": "https://zombieipsum.com/api",
+    "features": [
+      "Zombie-themed text",
+      "Customizable paragraph count"
+    ],
+    "limit": "Free for personal use.",
+    "access_key": "",
+    "request_key": "type"
+  },
+  "LanguageTool": {
+    "cat": "Text Processing",
+    "doc": "https://languagetool.org/http-api/swagger-ui/",
+    "dsc": "Checks spelling, grammar, and style in multiple languages.",
+    "endpoint": "https://api.languagetool.org/v2/check",
+    "features": [
+      "Grammar correction",
+      "Spelling correction",
+      "Style suggestions"
+    ],
+    "limit": "Free plan allows 20 requests per minute.",
+    "access_key": "apiKey",
+    "request_key": "text"
+  },
+  "TextGears": {
+    "cat": "Text Analysis",
+    "doc": "https://textgears.com/api",
+    "dsc": "Grammar, spelling, and text analysis API.",
+    "endpoint": "https://textgears.com/api/check",
+    "features": [
+      "Grammar check",
+      "Text analysis",
+      "Spelling correction"
+    ],
+    "limit": "Free plan allows 1000 characters per request.",
+    "access_key": "key",
+    "request_key": "text"
+  },
+  "Content Moderation API": {
+    "cat": "Text Processing",
+    "doc": "https://moderatecontent.com/",
+    "dsc": "Detects and filters inappropriate content and profanity.",
+    "endpoint": "https://api.moderatecontent.com/v1/moderate",
+    "features": [
+      "Profanity detection",
+      "Content classification",
+      "Automated moderation"
+    ],
+    "limit": "1000 requests per day in free plan.",
+    "access_key": "api_key",
+    "request_key": "content"
+  },
+  "Document Conversion API": {
+    "cat": "Text Processing",
+    "doc": "https://cloudconvert.com/api",
+    "dsc": "Converts documents between different formats.",
+    "endpoint": "https://api.cloudconvert.com/convert",
+    "features": [
+      "Format conversion",
+      "Batch processing",
+      "Quality preservation"
+    ],
+    "limit": "25 conversions per day in free plan.",
+    "access_key": "api_key",
+    "request_key": "file"
+  },
+  "Handwriting Recognition API": {
+    "cat": "Text Processing",
+    "doc": "https://cloud.google.com/vision/docs/handwriting",
+    "dsc": "Converts handwritten text to digital format.",
+    "endpoint": "https://vision.googleapis.com/v1/images:annotate",
+    "features": [
+      "Handwriting to text",
+      "Multiple language support",
+      "Style recognition"
+    ],
+    "limit": "1000 requests per month free.",
+    "access_key": "key",
+    "request_key": "image"
+  },
+  "Language Detection API": {
+    "cat": "Text Processing",
+    "doc": "https://detectlanguage.com/",
+    "dsc": "Identifies the language of provided text content.",
+    "endpoint": "https://detectlanguage.com/detect",
+    "features": [
+      "Language identification",
+      "Script detection",
+      "Confidence scoring"
+    ],
+    "limit": "1000 requests per day in free plan.",
+    "access_key": "key",
+    "request_key": "q"
+  },
+  "Plagiarism Checker API": {
+    "cat": "Text Processing",
+    "doc": "https://copyleaks.com/api/",
+    "dsc": "Checks text content for potential plagiarism and similarity.",
+    "endpoint": "https://api.copyleaks.com/v3/education",
+    "features": [
+      "Similarity detection",
+      "Source attribution",
+      "Content verification"
+    ],
+    "limit": "2500 words per month in free plan.",
+    "access_key": "apiKey",
+    "request_key": "text"
+  },
+  "Speech Recognition API": {
+    "cat": "Text Processing",
+    "doc": "https://cloud.google.com/speech-to-text",
+    "dsc": "Converts spoken audio to text.",
+    "endpoint": "https://speech.googleapis.com/v1/speech:recognize",
+    "features": [
+      "Audio transcription",
+      "Real-time recognition",
+      "Multiple language support"
+    ],
+    "limit": "60 minutes free per month.",
+    "access_key": "key",
+    "request_key": "audio"
+  },
+  "Text Analytics API": {
+    "cat": "Text Processing",
+    "doc": "https://azure.microsoft.com/services/cognitive-services/text-analytics/",
+    "dsc": "Provides comprehensive text analysis and insights.",
+    "endpoint": "https://api.cognitive.microsoft.com/text/analytics/v3.0/keyPhrases",
+    "features": [
+      "Sentiment analysis",
+      "Key phrase extraction",
+      "Language detection"
+    ],
+    "limit": "5,000 transactions per month free.",
+    "access_key": "Ocp-Apim-Subscription-Key",
+    "request_key": "documents"
+  },
+  "Text Autocomplete API": {
+    "cat": "Text Processing",
+    "doc": "https://words.bighugelabs.com/api",
+    "dsc": "Provides intelligent text completion suggestions.",
+    "endpoint": "https://words.bighugelabs.com/api/2/",
+    "features": [
+      "Word completion",
+      "Phrase suggestions",
+      "Context awareness"
+    ],
+    "limit": "10,000 requests per day in free plan.",
+    "access_key": "apiKey",
+    "request_key": "text"
+  },
+  "Text Classification API": {
+    "cat": "Text Processing",
+    "doc": "https://classify.ai/text-classification",
+    "dsc": "Automatically categorizes text into predefined categories.",
+    "endpoint": "https://classify.ai/text-classification",
+    "features": [
+      "Topic classification",
+      "Content categorization",
+      "Multi-label classification"
+    ],
+    "limit": "500 requests per day in free tier.",
+    "access_key": "api_key",
+    "request_key": "text"
+  },
+  "Text Extraction API": {
+    "cat": "Text Processing",
+    "doc": "https://textrazor.com/",
+    "dsc": "Extracts structured data from unstructured text.",
+    "endpoint": "https://api.textrazor.com/",
+    "features": [
+      "Entity extraction",
+      "Relationship extraction",
+      "Topic extraction"
+    ],
+    "limit": "500 requests per day in free plan.",
+    "access_key": "apiKey",
+    "request_key": "text"
+  },
+  "Text-to-Speech API": {
+    "cat": "Text Processing",
+    "doc": "https://cloud.google.com/text-to-speech",
+    "dsc": "Converts text into natural-sounding speech.",
+    "endpoint": "https://texttospeech.googleapis.com/v1/text:synthesize",
+    "features": [
+      "Multiple voices",
+      "Language support",
+      "SSML support"
+    ],
+    "limit": "1 million characters per month in free tier.",
+    "access_key": "key",
+    "request_key": "input"
+  },
+  "Text Complexity API": {
+    "cat": "Text Processing",
+    "doc": "https://readable.com/api/",
+    "dsc": "Analyzes text complexity and provides readability metrics.",
+    "endpoint": "https://readable.com/api/v1/complexity",
+    "features": [
+      "Readability scores",
+      "Complexity analysis",
+      "Grade level assessment"
+    ],
+    "limit": "100 requests per day in free plan.",
+    "access_key": "api_key",
+    "request_key": "text"
+  },
+  "DeepL": {
+    "cat": "Translation",
+    "doc": "https://www.deepl.com/docs-api",
+    "dsc": "High-quality text translation with contextual understanding.",
+    "endpoint": "https://api-free.deepl.com/v2/translate",
+    "features": [
+      "High-quality translations",
+      "Contextual understanding"
+    ],
+    "limit": "Free plan limits the number of characters translated per month.",
+    "access_key": "auth_key",
+    "request_key": "text"
+  },
+  "LibreTranslate": {
+    "cat": "Translation",
+    "doc": "https://libretranslate.com/docs/",
+    "dsc": "Free translation API for multiple languages.",
+    "endpoint": "https://libretranslate.com/translate",
+    "features": [
+      "Text translation",
+      "Language detection"
+    ],
+    "limit": "Limited to a certain number of translations per day in the free plan.",
+    "access_key": "api_key",
+    "request_key": "q"
+  },
+  "Microsoft Translator API": {
+    "cat": "Translation",
+    "doc": "https://learn.microsoft.com/en-us/azure/cognitive-services/translator/",
+    "dsc": "Offers AI-powered text translation in real-time.",
+    "endpoint": "https://api.cognitive.microsofttranslator.com/translate",
+    "features": [
+      "Real-time translation",
+      "AI-powered translations"
+    ],
+    "limit": "Free plan allows 2 million characters per month.",
+    "access_key": "Ocp-Apim-Subscription-Key",
+    "request_key": "text"
+  },
+  "OpenWeather": {
+    "cat": "Weather Data",
+    "doc": "https://openweathermap.org/api",
+    "dsc": "Provides current weather data for any location including over 200,000 cities.",
+    "endpoint": "https://api.openweathermap.org/data/2.5/weather",
+    "features": [
+      "Real-time weather updates",
+      "Coverage for over 200,000 cities"
+    ],
+    "limit": "Free tier allows 60 calls per minute.",
+    "access_key": "appid",
+    "request_key": "q"
+  },
+  "WeatherAPI": {
+    "cat": "Weather Data",
+    "doc": "https://www.weatherapi.com/docs/",
+    "dsc": "Offers real-time weather data and forecasts for cities worldwide.",
+    "endpoint": "https://api.weatherapi.com/v1/current.json",
+    "features": [
+      "Real-time weather information",
+      "Forecasts for cities worldwide"
+    ],
+    "limit": "Free tier allows 1,000 calls per month.",
+    "access_key": "key",
+    "request_key": "q"
+  },
+  "WeatherStack": {
+    "cat": "Weather Data",
+    "doc": "https://weatherstack.com/documentation",
+    "dsc": "Delivers real-time weather information for global locations with historical data options.",
+    "endpoint": "http://api.weatherstack.com/current",
+    "features": [
+      "Real-time weather updates",
+      "Historical weather data"
+    ],
+    "limit": "Free tier allows 250 calls per month.",
+    "access_key": "access_key",
+    "request_key": "query"
+  }
+}

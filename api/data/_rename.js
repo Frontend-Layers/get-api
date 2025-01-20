@@ -20,8 +20,8 @@ async function processJsonFiles() {
       const jsonData = JSON.parse(data);
 
       // Rename the specified fields in each object
-      const oldKey = 'url';
-      const newKey = 'endpoint';
+      const oldKey = 'req';
+      const newKey = 'key';
 
       for (const key in jsonData) {
         if (jsonData[key] && oldKey in jsonData[key]) {
