@@ -72,7 +72,10 @@
     ],
     "limit": "Free tier allows up to 5 API requests per minute and 500 requests per day.",
     "access_key": "apikey",
-    "request_key": "function"
+    "request_key": "function",
+    "header": {
+      "Content-Type": "application/json"
+    }
   },
   "Finnhub": {
     "cat": "Finance",
@@ -87,7 +90,10 @@
     ],
     "limit": "Free tier allows 60 API calls per minute.",
     "access_key": "token",
-    "request_key": "symbol"
+    "request_key": "symbol",
+    "header": {
+      "Content-Type": "application/json"
+    }
   },
   "Polygon.io": {
     "cat": "Finance",
@@ -102,7 +108,10 @@
     ],
     "limit": "Free plan allows limited access to data and APIs.",
     "access_key": "apiKey",
-    "request_key": "symbol"
+    "request_key": "symbol",
+    "header": {
+      "Content-Type": "application/json"
+    }
   },
   "NewsAPI": {
     "cat": "News",
@@ -304,25 +313,11 @@
     "access_key": "",
     "request_key": "type"
   },
-  "LanguageTool": {
-    "cat": "Text Processing",
-    "doc": "https://languagetool.org/http-api/swagger-ui/",
-    "dsc": "Checks spelling, grammar, and style in multiple languages.",
-    "endpoint": "https://api.languagetool.org/v2/check",
-    "features": [
-      "Grammar correction",
-      "Spelling correction",
-      "Style suggestions"
-    ],
-    "limit": "Free plan allows 20 requests per minute.",
-    "access_key": "apiKey",
-    "request_key": "text"
-  },
   "TextGears": {
     "cat": "Text Analysis",
     "doc": "https://textgears.com/api",
     "dsc": "Grammar, spelling, and text analysis API.",
-    "endpoint": "https://textgears.com/api/check",
+    "endpoint": "https://api.textgears.com/grammar",
     "features": [
       "Grammar check",
       "Text analysis",
@@ -330,7 +325,14 @@
     ],
     "limit": "Free plan allows 1000 characters per request.",
     "access_key": "key",
-    "request_key": "text"
+    "method": "GET",
+    "request_key": [
+      "language",
+      "text"
+    ],
+    "header": {
+      "Content-Type": "application/json"
+    }
   },
   "Content Moderation API": {
     "cat": "Text Processing",
@@ -550,7 +552,10 @@
     ],
     "limit": "Free tier allows 60 calls per minute.",
     "access_key": "appid",
-    "request_key": "q"
+    "request_key": "q",
+    "header": {
+      "Content-Type": "application/json"
+    }
   },
   "WeatherAPI": {
     "cat": "Weather Data",
@@ -563,7 +568,10 @@
     ],
     "limit": "Free tier allows 1,000 calls per month.",
     "access_key": "key",
-    "request_key": "q"
+    "request_key": "q",
+    "header": {
+      "Content-Type": "application/json"
+    }
   },
   "WeatherStack": {
     "cat": "Weather Data",
@@ -576,6 +584,9 @@
     ],
     "limit": "Free tier allows 250 calls per month.",
     "access_key": "access_key",
-    "request_key": "query"
+    "request_key": "query",
+    "header": {
+      "Content-Type": "application/json"
+    }
   }
 }

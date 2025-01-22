@@ -12,7 +12,10 @@
     ],
     "limit": "Free tier allows up to 5 API requests per minute and 500 requests per day.",
     "access_key": "apikey",
-    "request_key": "function"
+    "request_key": "function",
+    "header": {
+      "Content-Type": "application/json"
+    }
   },
   "Finnhub": {
     "cat": "Finance",
@@ -27,7 +30,10 @@
     ],
     "limit": "Free tier allows 60 API calls per minute.",
     "access_key": "token",
-    "request_key": "symbol"
+    "request_key": "symbol",
+    "header": {
+      "Content-Type": "application/json"
+    }
   },
   "Polygon.io": {
     "cat": "Finance",
@@ -42,6 +48,9 @@
     ],
     "limit": "Free plan allows limited access to data and APIs.",
     "access_key": "apiKey",
-    "request_key": "symbol"
+    "request_key": "symbol",
+    "header": {
+      "Content-Type": "application/json"
+    }
   }
 }

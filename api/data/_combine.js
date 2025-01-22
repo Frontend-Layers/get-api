@@ -1,37 +1,48 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { merge } from 'lodash-es'; // Для глубокого слияния JSON
 
-// Get the current directory from the ES module's URL
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Set the correct path directly
-const directoryPath = __dirname;  // This will point to the 'api/data' folder
-
-const combineJSONFiles = async () => {
+/**
+ * Combines JSON files from the specified directory into a single file.
+ * @param {string} inputDir - Directory containing JSON files.
+ * @param {string} outputFile - Path to the output file.
+ */
+export const combineJSONFiles = async (inputDir = __dirname, outputFile = path.join(__dirname, 'index.json')) => {
   try {
-    const files = await fs.promises.readdir(directoryPath);
-    const jsonFiles = files.filter(file => file.endsWith('.json') && file !== 'index.json');
+    // Read the list of files in the input directory
+    const files = await fs.promises.readdir(inputDir);
+
+    // Filter JSON files, excluding the output file
+    const jsonFiles = files.filter(file => file.endsWith('.json') && file !== path.basename(outputFile));
 
     const combinedData = {};
 
+    // Read and merge each JSON file
     for (const file of jsonFiles) {
-      const filePath = path.join(directoryPath, file);
-      const data = await fs.promises.readFile(filePath, 'utf-8');
-      const parsedData = JSON.parse(data);
-
-      // Merge the parsed data into the combinedData object
-      Object.assign(combinedData, parsedData);
+      const filePath = path.join(inputDir, file);
+      try {
+        const data = await fs.promises.readFile(filePath, 'utf-8');
+        const parsedData = JSON.parse(data);
+        merge(combinedData, parsedData); // Deep merge
+      } catch (error) {
+        console.warn(`Skipping invalid or unreadable JSON file: ${file}`, error.message);
+      }
     }
 
-    // Write the combined data into index.json
+    // Write the combined data to the output file
     const combinedJSON = JSON.stringify(combinedData, null, 2);
-    await fs.promises.writeFile(path.join(directoryPath, 'index.json'), combinedJSON, 'utf-8');
-    console.log('JSON files combined successfully into index.json');
+    await fs.promises.writeFile(outputFile, combinedJSON, 'utf-8');
+    console.log(`JSON files combined successfully into ${outputFile}`);
   } catch (error) {
     console.error('Error combining JSON files:', error);
   }
 };
 
-combineJSONFiles();
+// If the script is run directly, execute the function
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  combineJSONFiles();
+}

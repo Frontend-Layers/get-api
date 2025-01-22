@@ -1,0 +1,14 @@
+/**
+ * Button as a link
+ */
+.btn-link {
+  margin: 0;
+  padding: 0;
+  color: rgba(var(--bs-link-color-rgb),
+      var(--bs-link-opacity, 1));
+  text-decoration: underline;
+}
+
+.btn-link:hover {
+  --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+}
