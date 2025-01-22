@@ -1,17 +1,21 @@
-http://localhost:3000/status
+### Test Server
+GET http://localhost:3000/status
+
 
 ### OpenWeather API - Current Weather
 GET http://localhost:3000/api?service=OpenWeather&q=London
 Content-Type: application/json
 
----
 
 ### WeatherStack - Current Weather
 GET http://localhost:3000/api?service=WeatherStack&q=Tokyo
 Content-Type: application/json
 
----
 
 ### The Cocktail DB - Cocktail Recipes
-GET http://localhost:3000/api?service=The Cocktail DB&q=Mojito
+GET http://localhost:3000/api?service=The Cocktail DB&s=Mojito
 Content-Type: application/json
+
+
+### TextGears API - Grammar Check (Correct Sentence)
+GET http://localhost:3000/api?service=TextGears&text=11, sdfds --- This is a correct sentence.&language=en-US

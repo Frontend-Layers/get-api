@@ -1,0 +1,339 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 9,
+    "passes": 8,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-01-22T22:32:42.879Z",
+    "end": "2025-01-22T22:32:43.773Z",
+    "duration": 894,
+    "testsRegistered": 9,
+    "passPercent": 88.88888888888889,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b0f0ffb6-17e5-41d8-a4ad-bc4440d4446a",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cf6cdadc-8679-4cce-89f3-f3e42ffb869b",
+          "title": "Weather API Tests",
+          "fullFile": "W:\\home\\fel\\get-api\\app\\public\\tests\\test-api.mjs",
+          "file": "\\app\\public\\tests\\test-api.mjs",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should fetch data from OpenWeather API",
+              "fullTitle": "Weather API Tests should fetch data from OpenWeather API",
+              "timedOut": false,
+              "duration": 143,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const serviceName = 'OpenWeather';\nconst query = 'London';\nconst result = await fetchData(serviceName, query);\nexpect(result).to.not.be.null;\nexpect(result).to.have.property('name');\nexpect(result.name).to.equal(query);",
+              "err": {},
+              "uuid": "fc186175-b2be-4953-8262-326bf6d89b15",
+              "parentUUID": "cf6cdadc-8679-4cce-89f3-f3e42ffb869b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should fetch data from WeatherAPI API",
+              "fullTitle": "Weather API Tests should fetch data from WeatherAPI API",
+              "timedOut": false,
+              "duration": 111,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const serviceName = 'WeatherAPI';\nconst query = 'Paris';\nconst result = await fetchData(serviceName, query);\nexpect(result).to.not.be.null;\nexpect(result).to.have.property('location');\nexpect(result.location.name).to.equal(query);",
+              "err": {},
+              "uuid": "2a9c2d35-d04b-41fc-bf97-b06ebb43531f",
+              "parentUUID": "cf6cdadc-8679-4cce-89f3-f3e42ffb869b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should fetch data from WeatherStack API",
+              "fullTitle": "Weather API Tests should fetch data from WeatherStack API",
+              "timedOut": false,
+              "duration": 354,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const serviceName = 'WeatherStack';\nconst query = 'Berlin';\nconst result = await fetchData(serviceName, query);\nexpect(result).to.not.be.null;\nexpect(result).to.have.property('location');\nexpect(result.location.name).to.equal(query);",
+              "err": {},
+              "uuid": "0aafa25f-afb1-460e-9971-d606cc4be200",
+              "parentUUID": "cf6cdadc-8679-4cce-89f3-f3e42ffb869b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should handle errors for invalid service name",
+              "fullTitle": "Weather API Tests should handle errors for invalid service name",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const serviceName = 'InvalidService';\nconst query = 'exampleQuery';\nconst result = await fetchData(serviceName, query);\nexpect(result).to.be.null;",
+              "err": {},
+              "uuid": "79991482-e286-4324-9629-32a49ef16f0c",
+              "parentUUID": "cf6cdadc-8679-4cce-89f3-f3e42ffb869b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should handle errors for missing API key",
+              "fullTitle": "Weather API Tests should handle errors for missing API key",
+              "timedOut": false,
+              "duration": 30,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const serviceName = 'OpenWeather';\nconst query = 'London';\nprocess.env.OPENWEATHER_API_KEY = '';\nconst result = await fetchData(serviceName, query);\nexpect(result).to.be.null;",
+              "err": {},
+              "uuid": "c0a97785-30f4-4a5f-85b5-3691817a591b",
+              "parentUUID": "cf6cdadc-8679-4cce-89f3-f3e42ffb869b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fc186175-b2be-4953-8262-326bf6d89b15",
+            "2a9c2d35-d04b-41fc-bf97-b06ebb43531f",
+            "0aafa25f-afb1-460e-9971-d606cc4be200",
+            "79991482-e286-4324-9629-32a49ef16f0c",
+            "c0a97785-30f4-4a5f-85b5-3691817a591b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 638,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "90453b6b-3521-4164-b6a8-97c1e8fd525c",
+          "title": "combineJSONFiles",
+          "fullFile": "W:\\home\\fel\\get-api\\app\\public\\tests\\test-json-utils.mjs",
+          "file": "\\app\\public\\tests\\test-json-utils.mjs",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"combineJSONFiles\"",
+              "fullTitle": "combineJSONFiles \"before all\" hook in \"combineJSONFiles\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Create a unique name for the temporary directory using the current timestamp\ntestDataDir = path.join(__dirname, `test-data-${Date.now()}`);\noutputFile = path.join(testDataDir, 'index.json');\n// Create the temporary directory if it doesn't exist\nif (!fs.existsSync(testDataDir)) {\n  fs.mkdirSync(testDataDir, { recursive: true });\n}\n// Create test JSON files in the temporary directory\nfs.writeFileSync(path.join(testDataDir, 'file1.json'), JSON.stringify({ a: 1 }));\nfs.writeFileSync(path.join(testDataDir, 'file2.json'), JSON.stringify({ b: 2 }));",
+              "err": {},
+              "uuid": "2072c65c-af90-4af6-a054-343874840961",
+              "parentUUID": "90453b6b-3521-4164-b6a8-97c1e8fd525c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"combineJSONFiles\"",
+              "fullTitle": "combineJSONFiles \"after all\" hook in \"combineJSONFiles\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Clean up: delete the temporary files and directory\nif (fs.existsSync(path.join(testDataDir, 'file1.json'))) {\n  fs.unlinkSync(path.join(testDataDir, 'file1.json'));\n}\nif (fs.existsSync(path.join(testDataDir, 'file2.json'))) {\n  fs.unlinkSync(path.join(testDataDir, 'file2.json'));\n}\nif (fs.existsSync(outputFile)) {\n  fs.unlinkSync(outputFile);\n}\nif (fs.existsSync(testDataDir)) {\n  fs.rmdirSync(testDataDir);\n}",
+              "err": {},
+              "uuid": "e3124f6e-44d4-48c2-bef4-b40e2aa5a13c",
+              "parentUUID": "90453b6b-3521-4164-b6a8-97c1e8fd525c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should combine JSON files into index.json",
+              "fullTitle": "combineJSONFiles should combine JSON files into index.json",
+              "timedOut": false,
+              "duration": 4,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Call the function to combine JSON files in the temporary directory\nawait combineJSONFiles(testDataDir, outputFile);\n// Check if the output file (index.json) was created\nexpect(fs.existsSync(outputFile)).to.be.true;\n// Read and parse the output file to verify its content\nconst combinedData = JSON.parse(fs.readFileSync(outputFile, 'utf-8'));\n// Verify that the combined data matches the expected result\nexpect(combinedData).to.deep.equal({ a: 1, b: 2 });",
+              "err": {},
+              "uuid": "91740aa3-f735-41dd-bb87-dd379bd3ada0",
+              "parentUUID": "90453b6b-3521-4164-b6a8-97c1e8fd525c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "91740aa3-f735-41dd-bb87-dd379bd3ada0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "77bdc1ad-62c7-43b7-aee2-0553d006c1b0",
+          "title": "Text API Tests",
+          "fullFile": "W:\\home\\fel\\get-api\\app\\public\\tests\\test-text-api.mjs",
+          "file": "\\app\\public\\tests\\test-text-api.mjs",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should fetch data from TextGears API",
+              "fullTitle": "Text API Tests should fetch data from TextGears API",
+              "timedOut": false,
+              "duration": 127,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const serviceName = 'TextGears';\nconst query = {\n  text: 'This is a test sentence with a error.',\n  language: 'en-US'\n};\nconst result = await fetchData(serviceName, query);\nconsole.log('TextGears API Response:', result); // Логируем ответ для отладки\n// Проверяем, что результат не null\nexpect(result).to.not.be.null;\n// Проверяем, что ответ содержит статус и он true\nexpect(result).to.have.property('status');\nexpect(result.status).to.be.true;\n// Проверяем, что ответ содержит поле response и это объект\nexpect(result).to.have.property('response');\nexpect(result.response).to.be.an('object');\n// Проверяем, что response содержит массив errors\nexpect(result.response).to.have.property('errors');\nexpect(result.response.errors).to.be.an('array');\n// Проверяем, что errors содержит хотя бы одну ошибку\nif (result.response.errors.length > 0) {\n  const firstError = result.response.errors[0];\n  expect(firstError).to.have.property('id');\n  expect(firstError).to.have.property('bad');\n  expect(firstError).to.have.property('better');\n  expect(firstError.better).to.be.an('array');\n}",
+              "err": {
+                "message": "AssertionError: expected null not to be null",
+                "estack": "AssertionError: expected null not to be null\n    at Context.<anonymous> (file:///W:/home/fel/get-api/app/public/tests/test-text-api.mjs:19:29)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)",
+                "diff": null
+              },
+              "uuid": "94bd0225-14c0-4e34-81ca-dc95bb22a5ef",
+              "parentUUID": "77bdc1ad-62c7-43b7-aee2-0553d006c1b0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should handle errors for missing API key",
+              "fullTitle": "Text API Tests should handle errors for missing API key",
+              "timedOut": false,
+              "duration": 58,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const serviceName = 'TextGears';\nconst query = {\n  text: 'This is a test sentence with a error.',\n  language: 'en-US'\n};\n// Сохраняем текущий API ключ\nconst originalApiKey = process.env.TEXTGEARS_API_KEY;\n// Удаляем API ключ из переменных окружения\ndelete process.env.TEXTGEARS_API_KEY;\nconst result = await fetchData(serviceName, query);\n// Восстанавливаем API ключ\nprocess.env.TEXTGEARS_API_KEY = originalApiKey;\n// Проверяем, что результат null (так как API ключ отсутствует)\nexpect(result).to.be.null;",
+              "err": {},
+              "uuid": "24773302-dfb3-471d-8359-8fbf7cd574fb",
+              "parentUUID": "77bdc1ad-62c7-43b7-aee2-0553d006c1b0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should handle errors for invalid query",
+              "fullTitle": "Text API Tests should handle errors for invalid query",
+              "timedOut": false,
+              "duration": 57,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const serviceName = 'TextGears';\nconst query = {\n  text: '', // Пустой текст\n  language: 'en-US'\n};\nconst result = await fetchData(serviceName, query);\n// Проверяем, что результат null (так как запрос пустой)\nexpect(result).to.be.null;",
+              "err": {},
+              "uuid": "ddddeed5-05e3-4ebe-a49f-5b27af09bc45",
+              "parentUUID": "77bdc1ad-62c7-43b7-aee2-0553d006c1b0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "24773302-dfb3-471d-8359-8fbf7cd574fb",
+            "ddddeed5-05e3-4ebe-a49f-5b27af09bc45"
+          ],
+          "failures": [
+            "94bd0225-14c0-4e34-81ca-dc95bb22a5ef"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 242,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "index.html",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./app/public/tests/report",
+        "reportFilename": "index.html",
+        "quiet": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

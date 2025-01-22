@@ -1,0 +1,33 @@
+<%- include('./layouts/head.ejs') %>
+
+<div class="container pt-5">
+  <%- include('./layouts/header.ejs', { title: 'JSON Utils' }) %>
+
+  <!-- Flash messages -->
+  <% if (messages.error && messages.error.length > 0) { %>
+    <div class="alert alert-danger" role="alert">
+      <%= messages.error[0] %>
+    </div>
+  <% } %>
+  <% if (messages.success && messages.success.length > 0) { %>
+    <div class="alert alert-success" role="alert">
+      <%= messages.success[0] %>
+    </div>
+  <% } %>
+
+  <h3>Action</h3>
+
+  <ul>
+    <li>
+      <form action="/json" method="POST">
+        <button
+          type="submit"
+          name="btn_render_index"
+          value="btn_render_index"
+          class="btn btn-link">Render Index</button>
+      </form>
+    </li>
+  </ul>
+</div>
+
+<%- include('./layouts/footer.ejs') %>

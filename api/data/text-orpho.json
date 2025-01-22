@@ -1,23 +1,9 @@
 {
-  "LanguageTool": {
-    "cat": "Text Processing",
-    "doc": "https://languagetool.org/http-api/swagger-ui/",
-    "dsc": "Checks spelling, grammar, and style in multiple languages.",
-    "endpoint": "https://api.languagetool.org/v2/check",
-    "features": [
-      "Grammar correction",
-      "Spelling correction",
-      "Style suggestions"
-    ],
-    "limit": "Free plan allows 20 requests per minute.",
-    "access_key": "apiKey",
-    "request_key": "text"
-  },
   "TextGears": {
     "cat": "Text Analysis",
     "doc": "https://textgears.com/api",
     "dsc": "Grammar, spelling, and text analysis API.",
-    "endpoint": "https://textgears.com/api/check",
+    "endpoint": "https://api.textgears.com/grammar",
     "features": [
       "Grammar check",
       "Text analysis",
@@ -25,6 +11,10 @@
     ],
     "limit": "Free plan allows 1000 characters per request.",
     "access_key": "key",
-    "request_key": "text"
+    "method": "GET",
+    "request_key": ["language", "text"],
+    "header": {
+      "Content-Type": "application/json"
+    }
   }
 }

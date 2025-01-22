@@ -10,7 +10,10 @@
     ],
     "limit": "Free tier allows 60 calls per minute.",
     "access_key": "appid",
-    "request_key": "q"
+    "request_key": "q",
+    "header": {
+      "Content-Type": "application/json"
+    }
   },
   "WeatherAPI": {
     "cat": "Weather Data",
@@ -23,7 +26,10 @@
     ],
     "limit": "Free tier allows 1,000 calls per month.",
     "access_key": "key",
-    "request_key": "q"
+    "request_key": "q",
+    "header": {
+      "Content-Type": "application/json"
+    }
   },
   "WeatherStack": {
     "cat": "Weather Data",
@@ -36,6 +42,9 @@
     ],
     "limit": "Free tier allows 250 calls per month.",
     "access_key": "access_key",
-    "request_key": "query"
+    "request_key": "query",
+    "header": {
+      "Content-Type": "application/json"
+    }
   }
 }
